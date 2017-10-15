@@ -1,7 +1,7 @@
 import React, { Component, PropTypes } from 'react';
 
 import _ from 'lodash';
-//import dep from './dep';
+import dep from './dep';
 
 class MattModule1 extends Component {
   render(){
@@ -15,7 +15,7 @@ class MattModule1 extends Component {
 
     return (
       <div>
-        <h2>{h2}.</h2>
+        <h2>{h2}</h2>
       </div>
     );
   }
