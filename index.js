@@ -9,8 +9,8 @@ class MattModule1 extends Component {
       h2 = ''
     } = this.props;
 
-     let results = '';
-     getUsefulContents('http://www.example.com', data => { results = data; });
+     this.setState({results: ''});
+     getUsefulContents('http://www.example.com', data => { this.setState({results: data}); });
 
     let {
       flux, config
@@ -19,7 +19,7 @@ class MattModule1 extends Component {
     return (
       <div>
         <h2>{h2}:</h2>
-        <pre>{results}</pre>
+        <pre>{this.state.results}</pre>
       </div>
     );
   }
