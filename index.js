@@ -18,8 +18,8 @@ class MattModule1 extends Component {
       h2 = ''
     } = this.props;
 
-     this.setState({results: 'JSON'});
-     getJSON('https://modules-demo.franklyinc.com/latest.js?affiliate=wnow', data => { this.setState({results: data}); });
+     this.setState({results: {title:"test"}});
+//      getJSON('https://modules-demo.franklyinc.com/latest.js?affiliate=wnow&1', data => { this.setState({results: data}); });
 
     let {
       flux, config
