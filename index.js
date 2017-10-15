@@ -14,7 +14,7 @@ class MattModule1 extends Component {
 
   constructor(props) {
     super(props);
-    this.state = { results: {title:"test"} };
+    this.state = { results: "" };
     getJSON("https://modules-demo.franklyinc.com/latest.js?affiliate=wnow&1", (data) => this.setState( {results: data} ) );
   }
   
