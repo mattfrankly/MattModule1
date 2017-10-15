@@ -30,7 +30,7 @@ class MattModule1 extends Component {
     return (
       <div>
         <h2>{h2}:</h2>
-        <code>{this.state.results}</code>
+        <code>{JSON.stringify(this.state.results)}</code>
       </div>
     );
   }
