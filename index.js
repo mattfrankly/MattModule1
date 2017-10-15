@@ -25,8 +25,7 @@ class RandomTest extends Component {
 
     return (
       <div>
-        <h2>HELLO!</h2>
-	<h2>{otherarray[2]}</h2>
+        <h2>{h2}</h2>
       </div>
     );
   }
