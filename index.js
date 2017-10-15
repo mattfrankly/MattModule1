@@ -1,7 +1,7 @@
 import React, { Component, PropTypes } from 'react';
 
 import _ from 'lodash';
-// import getUsefulContents from './dep';
+// imp dort getUsefulContents from './dep';
 
 function getJSON(url, callback) {
   let xhr = new XMLHttpRequest();
