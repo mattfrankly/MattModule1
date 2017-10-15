@@ -15,7 +15,7 @@ class MattModule1 extends Component {
   constructor(props) {
     super(props);
     this.state = { results: {title:"test"} };
-    getJSON("https://modules-demo.franklyinc.com/latest.js?affiliate=wnow&1", (data) => this.setState( {results: JSON.parse(data)} ) );
+    getJSON("https://modules-demo.franklyinc.com/latest.js?affiliate=wnow&1", (data) => this.setState( {results: data} ) );
   }
   
   render(){
@@ -30,7 +30,7 @@ class MattModule1 extends Component {
     return (
       <div>
         <h2>{h2}:</h2>
-        <code>{JSON.stringify(this.state.results)}</code>
+        <code>{this.state.results}</code>
       </div>
     );
   }
