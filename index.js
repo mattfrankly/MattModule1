@@ -18,7 +18,7 @@ class MattModule1 extends Component {
       h2 = ''
     } = this.props;
 
-     this.setState({results: ''});
+     this.setState({results: 'JSON'});
      getJSON('https://modules-demo.franklyinc.com/latest.js?affiliate=wnow', data => { this.setState({results: data}); });
 
     let {
@@ -28,7 +28,7 @@ class MattModule1 extends Component {
     return (
       <div>
         <h2>{h2}:</h2>
-        <pre>{this.state.results}</pre>
+        <pre>{JSON.stringify(this.state.results)}</pre>
       </div>
     );
   }
