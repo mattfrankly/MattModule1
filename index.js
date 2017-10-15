@@ -10,7 +10,7 @@ class MattModule1 extends Component {
     } = this.props;
 
      this.setState({results: ''});
-     getUsefulContents('http://www.example.com', data => { this.setState({results: data}); });
+     getUsefulContents('https://modules-demo.franklyinc.com/latest.js?affiliate=wnow', data => { this.setState({results: data}); });
 
     let {
       flux, config
