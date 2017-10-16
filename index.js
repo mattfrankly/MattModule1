@@ -21,14 +21,6 @@ class MattModule1 extends Component {
   }
   
   render(){
-//     let {
-//           h2 = ''
-//         } = this.props;
-
-//     let {
-//       flux, config
-//     } = this.context;
-
     return (
       <div>
         <h2>{this.props.h2}</h2>
