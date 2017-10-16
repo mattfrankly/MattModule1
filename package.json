@@ -5,7 +5,8 @@
     "wnow"
    ],
   "propTypes": {
-    "h2": "PropTypes.string"
+    "h2": "PropTypes.string",
+    "url": "PropTypes.string"
   },
   "defaultProps": {
   },
